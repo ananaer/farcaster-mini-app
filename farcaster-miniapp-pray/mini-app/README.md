@@ -1,4 +1,14 @@
-This is a [Vite](https://vitejs.dev) project bootstrapped with [`@farcaster/create-mini-app`](https://github.com/farcasterxyz/miniapps/tree/main/packages/create-mini-app).
+# Farcaster Mini App: Sheep a Sheep
+
+This is a Farcaster Mini App clone of the popular tile-matching game "Sheep a Sheep".
+
+Features:
+- **Relaxing Match-3 Gameplay**: Match 3 identical tiles to clear them.
+- **Level System**: Includes a tutorial level (Level 1) and progressively harder levels.
+- **Solvable Levels**: Uses a reverse-solver algorithm to ensure every generated level has a solution.
+- **3D Visuals**: Custom claymorphism style tiles and forest theme.
+
+Built with [Vite](https://vitejs.dev) and [`@farcaster/create-mini-app`](https://github.com/farcasterxyz/miniapps/tree/main/packages/create-mini-app).
 
 For documentation and guides, visit [miniapps.farcaster.xyz](https://miniapps.farcaster.xyz/docs/getting-started).
 
