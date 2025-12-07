@@ -1,5 +1,6 @@
 /**
  * 羊了个羊（堆叠 + 7 槽三消）克隆页面。
+ * Updated for deployment trigger.
  * 用法：在 App 中渲染 <SheepGamePage />；项目仍通过 `npm run dev` 运行。
  * 规则：
  * - 仅可点击未被覆盖的牌（同 col/row 上 layer 最大者）；点击后放入 7 槽缓冲区。
