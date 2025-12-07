@@ -27,7 +27,7 @@ import {
   type GameOptions,
   type SheepTile,
 } from "./logic";
-import { loadSheepStats, recordSheepResult, type SheepStats } from "./storage";
+import { recordSheepResult } from "./storage";
 import useSoundEffects from "./useSoundEffects";
 
 const TILE_SET = ["🐑", "🐱", "🐶", "🐷", "🐔", "🐸", "🐙", "🐝", "🐠", "🌽", "🥕", "🍅", "🍆", "🥑", "🍄", "🍇"];
@@ -78,17 +78,16 @@ export function SheepGamePage() {
   const [status, setStatus] = useState<Status>("playing");
   const [moves, setMoves] = useState(0);
   const [clearedTriples, setClearedTriples] = useState(0);
-  const [stats, setStats] = useState<SheepStats>(() => loadSheepStats());
   const [pulseKey, setPulseKey] = useState(0);
   const sound = useSoundEffects();
 
   useEffect(() => {
-    setStats(loadSheepStats());
+    // Stats loading removed as unused for now
   }, []);
 
   useEffect(() => {
     if (status === "playing") return;
-    setStats(recordSheepResult(moves, clearedTriples));
+    recordSheepResult(moves, clearedTriples);
   }, [status, moves, clearedTriples]);
 
   const startGame = (lvl: number, newSeed: number) => {

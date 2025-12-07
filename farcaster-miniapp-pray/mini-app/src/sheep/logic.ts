@@ -282,7 +282,7 @@ export function resolveBuffer(buffer: BufferEntry[]): BufferResolveResult {
   });
 
   const removeIndices = new Set<number>();
-  Object.entries(typeIndices).forEach(([type, indices]) => {
+  Object.entries(typeIndices).forEach(([_, indices]) => {
     const tripleCount = Math.floor(indices.length / 3);
     if (tripleCount === 0) return;
     const toRemove = tripleCount * 3;
