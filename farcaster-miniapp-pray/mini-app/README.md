@@ -10,6 +10,10 @@ Features:
 
 Built with [Vite](https://vitejs.dev) and [`@farcaster/create-mini-app`](https://github.com/farcasterxyz/miniapps/tree/main/packages/create-mini-app).
 
+## Deploy
+
+This project is ready to be deployed on Vercel. Push to `master` to trigger a new deployment.
+
 For documentation and guides, visit [miniapps.farcaster.xyz](https://miniapps.farcaster.xyz/docs/getting-started).
 
 ## `farcaster.json`
